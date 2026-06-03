@@ -1,0 +1,6 @@
+
+calificacion = int(input("¿Como estuvo tu dia del 1 al 10? "))
+if 1 <= calificacion <= 10:
+    print("mi dia estuvo de: ", calificacion)
+else:
+    print("Por favor, ingrese un numero del 1 al 10")
