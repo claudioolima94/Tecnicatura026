@@ -37,7 +37,9 @@ if not (vacaciones or diaDescanso):
     print('Tiene trabajo que hacer')
 else:
     print('puede asistir al juego')
-    """
+
+"""
+"""
 # Ejercicio: Rango entre 20 y 30 años 
 
 edad = int(input("Digite su edad: "))
@@ -57,3 +59,35 @@ if (20 <= edad < 30) or (30 <= edad < 40): # Sintaxis simplificada del operador 
 #        print("no estas dentro del rango")
 else:
     print("no estas dentro del rango de los (20'0)a (30\'0) años")
+"""
+"""
+# Ejercicio: El mayor de dos numeros
+
+numero1 = int(input("Digite el valor para el numero1: "))
+numero2 = int(input("Digite el valor para el numero2: "))
+
+if numero1 > numero2:
+    print("El numero 1 es mayor")
+else:
+    print("El numero 2 es mayor")
+"""
+
+# Ejercicio: Tienda de libros
+
+print("Digite los siguientes datos del libro: ")
+nombre = input("Digite el nombre del libro: ")
+id = int(input("Digite el ID del libro: "))
+precio = float(input("Digite el precio del libro: "))
+envioGratuito = input("Indicar si el libro es gratuito (True/False): ")
+if envioGratuito == "True":
+    envioGratuito = True
+elif envioGratuito == "False":
+    envioGratuito = False
+else:
+    envioGratuito = "El valor es incorrecto, debe escribir True/False"
+print(f'''
+        Nombre: {nombre}
+        Id: {id}
+        Precio: {precio}
+        Envio Gratuito: {envioGratuito}
+''')
