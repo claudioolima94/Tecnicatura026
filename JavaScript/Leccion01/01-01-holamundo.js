@@ -1,2 +1,4 @@
 var nombre = "Claudio";
-console.log(nombre);
+nombre = "Claudio German ";
+var apellido = "Olima";
+console.log(nombre+apellido);
