@@ -1,5 +1,5 @@
 
-public class Leccion1 {
+public class Leccion2 {
     public static void main(String[] args) {
         System.out.println("Hola mundo desde java");   
         
