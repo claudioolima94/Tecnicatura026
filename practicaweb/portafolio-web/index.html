@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- Comentario en html -->
+<!-- 
+comentarios multiples
+-->
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento, especifica que se trata de un documento HTML5 -->
+<html lang="en">
+<!-- Elemento raíz del documento HTML. El atributo lang="en" indica que el idioma del contenido es inglés. -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Sitio Web</title>
-  <link rel="stylesheet" href="style.css">
+    <!-- Contiene metadatos y enlaces a recursos externos, no se muestra directamente en la página -->
+    <meta charset="UTF-8">
+    <!-- Declara la codificación de caracteres del documento como UTF-8, lo que permite usar una amplia variedad de caracteres. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la ventana gráfica para el diseño responsivo.
+         width=device-width establece el ancho de la página para que coincida con el ancho del dispositivo.
+         initial-scale=1.0 establece el nivel de zoom inicial cuando la página se carga. -->
+
+    <!--agregamos dos etiquetas meta para el Seo-->
+    <meta name="description" content="TeraByte, creado por nombre del grupo especializado en [Programacion]">
+    <meta name="keywords" content="portafolio, desarrollador web, [programador], proyectos, contacto">
+    <meta name="Claudio" content="Claudio Olima"
+
+    <title>Portafolio web</title>
+    <!-- Define el título del documento, que se muestra en la pestaña del navegador o en los resultados de búsqueda. -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Enlace a una hoja de estilos externa.
+         href="./style.css" especifica la ubicación del archivo CSS. -->
 </head>
 <body>
-
-  <header class="header">
-    <h1 class="logo">Claudio Olima</h1>
-    <nav class="navigation">
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
+    <!-- Cuerpo del documento, contiene el contenido visible para los usuarios -->
+    <header>
+        <!-- Sección de cabecera de la página, generalmente contiene logotipos, navegación y títulos. -->
+        <h1>Claudio Olima</h1>
+        <!-- Encabezado principal de la página, típicamente usado para el título o nombre del sitio. -->
+        <nav>
+            <!-- Elemento de navegación, contiene enlaces a otras partes de la página o a otras páginas. -->
+            <ul class="navigation">
+                <!-- Lista no ordenada, contiene elementos de navegación.
+                     class="navigation" aplica estilos definidos en css a esta lista. -->
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <!-- Elemento de lista que contiene un enlace.
+                     href="#sobremi" apunta a un ancla dentro de la misma página con el id="sobremi". -->
+                <li><a href="#proyectos">Proyectos</a></li>
+                <!-- Otro elemento de lista con un enlace.
+                     href="#proyectos" apunta a un ancla dentro de la misma página con el id="proyectos". -->
+                <li><a href=#experiencias">Experiencia</a></li>
+                <li><a href="#Contacto">Contactame</a></li>
+                <li><a href="#Estudios">Mis estudios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class=""Sobremi>
+        <article class="Container-sobremi">
+          <h2>
+            Soy <b>Profesor de soldadura</b> , estudiante de la Tecnicatura en programacion de la UTN
+            me gusta la carrera y quiero seguir aprendiendo de los profes que saben un monton
+          </h2>
+        </article>
+      </section>
+    </main>
 </body>
 </html>
