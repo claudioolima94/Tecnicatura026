@@ -87,3 +87,52 @@ cocina = tuple(cocinaLista)
 print('\n', cocina)
 
 # del cocina es para eliminar la tupla
+
+# Tipo set 
+
+planetas = {'marte', 'Jupiter', 'Venus'}
+print(len(planetas)) # Usamos la funcion len = length significa largo
+
+#Revisar si un elemento existe dentro de set
+print('Jupiter' in planetas)
+
+# Agregar un elemento 
+planetas.add('Tierra') # add es una funcion
+print(planetas)
+
+# Eliminar elementos, puede arrojar un error si el elemento no existe
+planetas.remove('Jupiter')
+print(planetas)
+planetas.discard('Tierra') # Esta funcion no nos precenta ningun error
+print(planetas)
+
+# Limpiar set
+planetas.clear()
+print(planetas)
+
+# Eliminar set o conjunto
+del planetas
+#print(planetas) # Al eliminar nos muestra fun error
+
+# 'Maradona' :10 Un diccionario esta compuesto por dos elementos
+# UNA LLAVE Y UN VALOR
+# DICT(KEY,VALUE)
+diccionario = {
+    'IDE':'Integrated Development Environment',
+    'POO':'Programacion Orientada a Objetos' ,
+    'SABD':'Sistema de Administracion de Base de Datos'
+}
+# Verificar la cantidad de elementos del diccionario
+print(len(diccionario))
+print(diccionario)
+
+# Acceder a un diccionario con la llave(key)
+print(diccionario['IDE'])
+
+# Otra forma de recuperar otro elemento
+print(diccionario.get('POO'))
+print(diccionario.get('SABD'))
+
+# Modificamos elementos
+diccionario['IDE'] = 'Entorno de Desarrollo Integrado'
+print(diccionario)

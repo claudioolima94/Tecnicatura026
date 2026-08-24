@@ -47,7 +47,6 @@ a {
 .container-sobremi {
     display: flex;
     width: 50%; /*ancho*/
-    padding: 2rem;
     margin-top: 5rem; /* margen a lo alto */
     line-height: 2.5rem; /* espaciado entre los parrafos del texto*/
     font-size: large; /* tamaño de la fuente */
