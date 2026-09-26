@@ -1,4 +1,20 @@
+/*Definiendo variables de color en css*/
+:root {
+    --body-bg-color: rgb(64, 64, 204);
+    --text-color: white;
+    --colorh1-color: rgb(170, 161, 161);    
+}
 
+/*Aplicando variable creada en el root al body de nuestra web*/
+/*Reemplazamos el body con el uso de variable css*/
+body {
+    background: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+h1, h2 {
+    color: var(--colorh1-color);
+}
 .navigation {
     display: flex; /* Utiliza Flexbox para organizar los elementos hijos (items de navegación) en una fila flexible. */
     gap: 3rem; /* Establece un espacio de 3 rem entre cada elemento hijo dentro del contenedor flex. */
@@ -11,11 +27,12 @@ a {
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
     color: black; /* Establece el color del texto de los enlaces a negro. */
 }
-body {
+
+/*body {
     background-color: rgb(68, 124, 124);
     color: rgb(48, 36, 36);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
 /*titulo del header*/
 .titulo {
@@ -47,10 +64,30 @@ a {
 .container-sobremi {
     display: flex;
     width: 50%; /*ancho*/
+    padding: 2rem;
     margin-top: 5rem; /* margen a lo alto */
     line-height: 2.5rem; /* espaciado entre los parrafos del texto*/
     font-size: large; /* tamaño de la fuente */
     color: azure;
+    gap: 5rem;
+    align-items: center;
+}
+.img-perfil{
+    border-radius: 50%;
+}
+.experiencia, .estudios{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: azure;
+}
+.container-experiencia, .container-estudios{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    margin: 8rem;
 }
  /* Media Queries agrupadas */
 
@@ -72,5 +109,17 @@ a {
         margin-top: 1rem; /* margen a lo alto */
         line-height: 2.5rem; /* espaciado entre los parrafos del texto*/
         font-size: small; /* tamaño de la fuente */
+        flex-direction: column;
+    }
+    /*Agregando el responcivo de las secciones experiencia y estudios*/
+    .container-experiencia, .container-estudios{
+        width: 100%;
+        margin: 0rem;
+    }
+    .experiencia, .estudios{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: small;
     }
 }
