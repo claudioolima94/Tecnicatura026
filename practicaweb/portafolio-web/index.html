@@ -1,81 +1,230 @@
 <!DOCTYPE html>
-<!-- Comentario en html -->
-<!-- 
-comentarios multiples
--->
-<!DOCTYPE html>
-<!-- Declaración del tipo de documento, especifica que se trata de un documento HTML5 -->
-<html lang="en">
-<!-- Elemento raíz del documento HTML. El atributo lang="en" indica que el idioma del contenido es inglés. -->
+<html lang="es">
 <head>
-    <!-- Contiene metadatos y enlaces a recursos externos, no se muestra directamente en la página -->
     <meta charset="UTF-8">
-    <!-- Declara la codificación de caracteres del documento como UTF-8, lo que permite usar una amplia variedad de caracteres. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura la ventana gráfica para el diseño responsivo.
-         width=device-width establece el ancho de la página para que coincida con el ancho del dispositivo.
-         initial-scale=1.0 establece el nivel de zoom inicial cuando la página se carga. -->
 
-    <!--agregamos dos etiquetas meta para el Seo-->
-    <meta name="description" content="TeraByte, creado por nombre del grupo especializado en [Programacion]">
-    <meta name="keywords" content="portafolio, desarrollador web, [programador], proyectos, contacto">
-    <meta name="Claudio" content="Claudio Olima"
+    <meta name="description" content="Portafolio personal de Claudio Olima, estudiante de la Tecnicatura en Programación de la UTN.">
+    <meta name="keywords" content="portafolio, desarrollador web, programación, UTN, Claudio Olima">
+    <meta name="author" content="Claudio Olima">
 
-    <title>Portafolio web</title>
-    <!-- Define el título del documento, que se muestra en la pestaña del navegador o en los resultados de búsqueda. -->
+    <title>Claudio Olima | Portafolio</title>
+
     <link rel="stylesheet" href="./Css/style.css">
-    <!-- Enlace a una hoja de estilos externa.
-         href="./style.css" especifica la ubicación del archivo CSS. -->
 </head>
+
 <body>
-    <!-- Cuerpo del documento, contiene el contenido visible para los usuarios -->
-    <header>
-        <!-- Sección de cabecera de la página, generalmente contiene logotipos, navegación y títulos. -->
-        <h1>Claudio Olima</h1>
-        <!-- Encabezado principal de la página, típicamente usado para el título o nombre del sitio. -->
-        <nav>
-            <!-- Elemento de navegación, contiene enlaces a otras partes de la página o a otras páginas. -->
-            <ul class="navigation">
-                <!-- Lista no ordenada, contiene elementos de navegación.
-                     class="navigation" aplica estilos definidos en css a esta lista. -->
-                <li><a href="#sobremi">Sobre Mi</a></li>
-                <!-- Elemento de lista que contiene un enlace.
-                     href="#sobremi" apunta a un ancla dentro de la misma página con el id="sobremi". -->
-                <li><a href="#proyectos">Proyectos</a></li>
-                <!-- Otro elemento de lista con un enlace.
-                     href="#proyectos" apunta a un ancla dentro de la misma página con el id="proyectos". -->
-                <li><a href=#experiencias">Experiencia</a></li>
-                <li><a href="#Contacto">Contactame</a></li>
-                <li><a href="#Estudios">Mis estudios</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="logo" href="#inicio">Claudio <span>Olima</span></a>
+
+            <nav aria-label="Navegación principal">
+                <ul class="navigation">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#estudios">Estudios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">PORTAFOLIO PERSONAL</p>
+                <h1>Hola, soy <span>Claudio Olima</span></h1>
+                <p class="hero-text">
+                    Estudiante de la Tecnicatura en Programación de la UTN,
+                    con interés en seguir aprendiendo y desarrollando nuevas habilidades.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#sobremi">Conoceme</a>
+                    <a class="btn btn-secondary" href="#contacto">Contactarme</a>
+                </div>
+            </div>
 
-      <section id="sobremi" class="SobreMi">
-        <article class="Container-sobremi">
-          <img class="img-perfil" src="./Assets/Claudio.jpeg" alt="fotografia de Claudio" width="200" height="200">
-          <h2>
-            Soy <b>Estudiante de la Tecnicatura en programacion de la UTN</b> , 
-            me gusta la carrera y quiero seguir aprendiendo de los profesores.
-          </h2>
-        </article>
-      </section>
-      <!--clase 3 Agregamos 2 secciones mas Experiencia y Estudios-->
-<section id="experiencia" class="experiencia">
-    <article class="container-experiencia">
-        <h2>Experiencia Laboral</h2>
-        <h3>Centro preventivo y asistencial Malargue</h3>
-        <h4>Noviembre 2025 Hasta la fecha: Profesor de Soldadura</h4>
-    </article>
-</section>
+            <div class="hero-card" aria-hidden="true">
+                <div class="code-window">
+                    <div class="window-dots"><i></i><i></i><i></i></div>
+                    <pre><code>&lt;programador&gt;
+  &lt;nombre&gt;Claudio Olima&lt;/nombre&gt;
+  &lt;aprendiendo&gt;siempre&lt;/aprendiendo&gt;
+&lt;/programador&gt;</code></pre>
+                </div>
+            </div>
+        </section>
 
-<section id="estudios" class="estudios">
-    <article class="container-estudios">
-        <h2>Mis estudios</h2>
-        <p>Estudiante de la Tecnicatura en programacion - UTN</p>
-    </article>
-</section>
+        <section id="sobremi" class="section section-dark">
+            <div class="section-heading">
+                <p class="eyebrow">01 — PERFIL</p>
+                <h2>Sobre mí</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="profile-wrapper">
+                    <img
+                        class="img-perfil"
+                        src="./Assets/Claudio.jpeg"
+                        alt="Fotografía de Claudio Olima"
+                        width="320"
+                        height="320"
+                    >
+                </div>
+
+                <article class="about-content">
+                    <h3>Estudiante de Programación</h3>
+                    <p>
+                        Soy <strong>estudiante de la Tecnicatura en Programación de la UTN</strong>.
+                        Me gusta la carrera y quiero seguir aprendiendo de los profesores.
+                    </p>
+                    <p>
+                        Este portafolio reúne mi formación, experiencia y los proyectos
+                        que vaya desarrollando durante mi recorrido.
+                    </p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span>🎓</span>
+                            <strong>Formación</strong>
+                            <small>Tecnicatura en Programación — UTN</small>
+                        </div>
+                        <div class="info-card">
+                            <span>📚</span>
+                            <strong>Objetivo</strong>
+                            <small>Seguir aprendiendo y desarrollándome</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">02 — TRAYECTORIA</p>
+                <h2>Experiencia laboral</h2>
+            </div>
+
+            <article class="timeline-card">
+                <div class="timeline-marker">01</div>
+                <div>
+                    <span class="date">Noviembre 2025 — Actualidad</span>
+                    <h3>Profesor de Soldadura</h3>
+                    <h4>Centro Preventivo y Asistencial Malargüe</h4>
+                    <p>
+                        Experiencia como profesor de Soldadura desde noviembre de 2025.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section id="estudios" class="section section-dark">
+            <div class="section-heading">
+                <p class="eyebrow">03 — FORMACIÓN</p>
+                <h2>Mis estudios</h2>
+            </div>
+
+            <article class="study-card">
+                <div class="study-icon">🎓</div>
+                <div>
+                    <span class="date">Formación actual</span>
+                    <h3>Tecnicatura en Programación</h3>
+                    <p>Universidad Tecnológica Nacional — UTN</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="proyectos" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">04 — TRABAJO</p>
+                <h2>Proyectos</h2>
+                <p class="section-intro">
+                    
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>Proyecto de programación</h3>
+                    <p>.</p>
+                    <span class="tag">En desarrollo</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Proyecto web</h3>
+                    <p>.</p>
+                    <span class="tag">Próximamente</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3>Próximo proyecto</h3>
+                    <p>.</p>
+                    <span class="tag">Próximamente</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact-section section-dark">
+            <div class="contact-box">
+                <div>
+                    <p class="eyebrow">05 — CONTACTO</p>
+                    <h2>¿Hablamos?</h2>
+                    <p>
+                       Mail: Claudio.94olima@gmial.com
+                       Tel: 2604604194
+                       Instagram: @claudio.olima
+                       Facebook: Claudio Olima
+                       
+                    </p>
+                </div>
+
+                <a class="btn btn-primary" href="mailto:tu-correo@ejemplo.com">
+                    Enviar un mensaje
+                </a>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="logo" href="#inicio">Claudio <span>Olima</span></a>
+                <p>
+                    Portafolio personal — Tecnicatura en Programación, UTN.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobremi">Sobre mí</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#estudios">Estudios</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Más</h3>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <a href="mailto:Claudio.94olima@gmail.com">Claudio.94olima@gmail.com</a>
+                <a href="tel:+5492604604194">+54 9 2604604194</a>
+                <span>Malargüe, Mendoza, Argentina</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Claudio Olima. Todos los derechos reservados.</p>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
+    </footer>
 </body>
 </html>

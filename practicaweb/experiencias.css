@@ -1,0 +1,37 @@
+.experiencia{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: azure;
+}
+.container-experiencia {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    margin: 8rem;
+
+    .container-experiencia{
+        width: 100%;
+        margin: 0rem;
+    }
+    /* Escritorio (pantallas anchas,1024px o más) */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start;
+    }
+    .navigation {
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: flex-end;
+    }
+    .experiencia{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: small;
+    }
+}
+ 
+ }
