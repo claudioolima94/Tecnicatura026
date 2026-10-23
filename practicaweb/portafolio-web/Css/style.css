@@ -405,7 +405,7 @@ img {
 .footer-brand p {
     max-width: 320px;
     margin-top: 1rem;
-    color: var(--muted);
+    color: #ffffff;
 }
 
 .footer-column {
@@ -539,4 +539,46 @@ img {
     .footer-bottom {
         flex-direction: column;
     }
+}
+
+/* ================= REDES SOCIALES ================= */
+
+.footer-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 1.5rem 0;
+}
+
+.footer-sociales a {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.45rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+}
+
+.footer-sociales a:hover {
+    transform: translateY(-4px) scale(1.08);
+    opacity: 0.9;
+}
+
+.footer-sociales .facebook {
+    color: #1877f2;
+    background: rgba(24, 119, 242, 0.12);
+}
+
+.footer-sociales .instagram {
+    color: #e4405f;
+    background: rgba(228, 64, 95, 0.12);
+}
+
+.footer-sociales .github {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.10);
 }
